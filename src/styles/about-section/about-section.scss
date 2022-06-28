@@ -9,7 +9,65 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    &__cv{
+        position: fixed;
+        z-index: 2;
+        left: 0%;
+        top: 0%;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(3px);
+        background-color: transparent;
+        animation-name: showCV;
+        animation-duration: 1s;
 
+        &--img{
+            border-radius: 10px;
+            position: fixed;
+            top: 2%;
+            left: 28%;
+            width: 45%;
+            height: 95%;
+            z-index: 3;
+
+            @include screen(extra-small, small){
+                top: 8%;
+                left: 0%;
+                width: 100%;
+            }
+            @include screen(small, medium){
+                left: 30%;
+                width: 40%;
+                height: 105%;
+            }
+            @include screen(medium, large){
+                left: 34%;
+                width: 35%;
+                height: 105%;
+            }
+        }
+
+        &--icon{
+            cursor: pointer;
+            font-size: 2rem;
+            position: fixed;
+            right: 3%;
+            top: 3%;
+            transition: 0.5s ease;
+        }
+        &--icon:hover{
+            transform: rotate(360deg);
+            color: red;
+        }
+    }
+    @keyframes showCV {
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
     &__left{
         display: flex;
         flex-direction: column;
@@ -66,6 +124,11 @@
                     font-size: 1rem;
                     line-height: 1.5rem;
                 }
+            }
+            .cv{
+                color: red;
+                font-size: 2rem;
+                cursor: pointer;
             }
         }
 
@@ -130,4 +193,7 @@
             }
         }
     }
+}
+.hideImg{
+    display: none;
 }
