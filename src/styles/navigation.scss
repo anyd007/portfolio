@@ -12,8 +12,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: start;
     height: 10vh;
+    margin-top: 20px;
 
     &__left{
         width: 100%;
@@ -43,7 +44,8 @@
 
                     @include screen(extra-small, small){
                         transition: transform 0.5s;   
-                        display: flex;               
+                        display: flex;       
+                        font-size: 1.5rem;        
                     }
                 }
 
@@ -52,6 +54,7 @@
 
                     @include screen(extra-small, small){
                         display: flex;
+                        font-size: 1.5rem;
                     }
                 }
             }

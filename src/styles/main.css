@@ -1,5 +1,6 @@
 @import "./navigation.css";
 @import "./right-side/right-side.css";
+@import "./about-section/about-section.css";
 * {
   font-family: "League Gothic", sans-serif;
   margin: 0%;

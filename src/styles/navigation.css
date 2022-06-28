@@ -10,8 +10,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   height: 10vh;
+  margin-top: 20px;
 }
 .navSection__left {
   width: 100%;
@@ -46,6 +47,7 @@
   .navSection__left--nav .icons .menu-open-icon {
     transition: transform 0.5s;
     display: flex;
+    font-size: 1.5rem;
   }
 }
 .navSection__left--nav .icons .menu-close-icon {
@@ -54,6 +56,7 @@
 @media (min-width: 230px) and (max-width: 480px) {
   .navSection__left--nav .icons .menu-close-icon {
     display: flex;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 230px) and (max-width: 480px) {
