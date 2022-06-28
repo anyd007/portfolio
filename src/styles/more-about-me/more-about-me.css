@@ -1,0 +1,10 @@
+.moreAboutMe {
+  display: flex;
+  width: 80%;
+  margin: 4rem;
+  margin-left: 3%;
+}
+.moreAboutMe p {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+}/*# sourceMappingURL=more-about-me.css.map */

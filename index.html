@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
   </head>
@@ -30,7 +31,7 @@
                 </div>
             </div>
             <div class="navSection__right">
-                <div class="navSection__right--mail"><a href="info@gebalaportfolio.pl">info@gebalaportfolio.pl</a></div>
+                <div class="navSection__right--mail"><a href="mailto:info@gebalaportfolio.pl">info@gebalaportfolio.pl</a></div>
             </div>
         </div>
 
@@ -53,19 +54,28 @@
                     <i class="fa-solid fa-arrow-left fa-beat-fade"></i></h3>
                 </div>
                 <div class="aboutSection__left--links">
-                    <a href="info@gebalaportfolio.pl">Przywitaj się...<i class="fa-solid fa-location-arrow link-icon"></i></a>
-                    <a href="#">Linkedin<i class="fa-solid fa-location-arrow link-icon"></i></a>
-                    <a href="#">Github<i class="fa-solid fa-location-arrow link-icon"></i></a>
+                    <a href="mailto:info@gebalaportfolio.pl">Przywitaj się...<i class="fa-solid fa-location-arrow link-icon"></i></a>
+                    <a href="https://linkedin.com/in/andrzej-gebala">Linkedin<i class="fa-solid fa-location-arrow link-icon"></i></a>
+                    <a href="https://github.com/anyd007">Github<i class="fa-solid fa-location-arrow link-icon"></i></a>
                     <a href="#">Facebook<i class="fa-solid fa-location-arrow link-icon"></i></a>
                 </div>
-
             </div>
             <div class="aboutSection__right">
                 <div class="aboutSection__right--img"></div>
             </div>
         </div>
+        <div class="moreAboutMe">
+            <p data-aos="slide-up" data-aos-delay="80">Wiem, jak w życiu człowieka ważna jest determinacja i chęć dążenia do celu, dlatego nie boję się nowych wyzwań. 
+                Potrafię pracować w zespole, jestem otwarty i nastawiony na dłuższą współpracę. Ponadto znam język angielski w stopniu 
+                komunikatywnym, w tym słownictwo branżowe związane z programowaniem i obsługą komputera. Jestem świadomy i w pełni przekonany, 
+                że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.</p>
+        </div>
     </div>
 
     <script type="module" src="./src/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
