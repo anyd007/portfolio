@@ -1,0 +1,96 @@
+@import "./responsivity/media-queries.scss";
+
+%navLinksStyle{
+    letter-spacing: 0.4rem;
+    font-size: 1.8vw;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+}
+
+.navSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 10vh;
+
+    &__left{
+        width: 100%;
+        
+        &--nav{
+            display: flex;
+            justify-content: space-evenly;
+
+            @include screen(extra-small, small){
+                flex-direction: column;
+                position: absolute;
+                height: 20vh;
+            }
+
+            @include screen(small, medium){
+                flex-wrap: wrap;
+                margin: 5px;
+                align-items: center;
+            }
+
+            .icons{
+                @include screen(extra-small, small){
+                    display: flex;
+                }
+                .menu-open-icon{
+                    display: none;
+
+                    @include screen(extra-small, small){
+                        transition: transform 0.5s;   
+                        display: flex;               
+                    }
+                }
+
+                .menu-close-icon{
+                    display: none;
+
+                    @include screen(extra-small, small){
+                        display: flex;
+                    }
+                }
+            }
+
+            a{
+               @extend %navLinksStyle;
+
+               @include screen(extra-small, small){
+                font-size: 1.5rem;
+                transition: 0.5s ease;
+               }
+
+               @include screen(small, medium){
+                margin-left: 0px;
+                font-size: 1rem;
+                letter-spacing: 0.1rem;
+               }
+
+               @include screen(medium, wide){
+                margin-left: 0px;
+                font-size: 1.2rem;
+               }
+               @include screenMax(wide){
+                margin-left: 0px;
+               }
+             }
+        }
+    }
+    
+    &__right{
+        &--mail{
+            a{
+                @extend %navLinksStyle;
+
+                @include screen(extra-small, small){
+                    font-size: 0.8rem;
+                    letter-spacing: 0.2rem;
+                   }
+            }
+        }
+    }
+}
