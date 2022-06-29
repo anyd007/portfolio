@@ -80,4 +80,66 @@
   to {
     opacity: 1;
   }
+}
+.scrollArrow {
+  background-color: none;
+  position: fixed;
+  right: 4%;
+  bottom: 10%;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-animation-name: showScroll;
+          animation-name: showScroll;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.scrollArrow .fa-square-caret-down {
+  font-size: 3rem;
+}
+
+@-webkit-keyframes showScroll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showScroll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.scrollArrow:hover {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.hideScroll {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

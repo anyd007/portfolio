@@ -1,2 +1,3 @@
 import "./navigation.js"
-import "./about-section.js"
+import "./scroll.js"
+import "./tasks.js"
