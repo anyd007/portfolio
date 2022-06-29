@@ -5,6 +5,11 @@
   margin-left: 3%;
   margin-bottom: 3%;
 }
+@media (min-width: 230px) and (max-width: 480px) {
+  .moreAboutMe {
+    margin-bottom: 10%;
+  }
+}
 .moreAboutMe p {
   font-family: "Syne", sans-serif;
   background-color: transparent;
