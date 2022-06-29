@@ -2,6 +2,8 @@
 @import "./nav-right-side/right-side.css";
 @import "./about-section/about-section.css";
 @import "./more-about-me/more-about-me.css";
+@import "./skils/skils.css";
+@import "./tasks/tasks.css";
 * {
   scroll-behavior: smooth;
   font-family: "League Gothic", sans-serif;

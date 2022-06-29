@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     
@@ -36,10 +39,6 @@
         </div>
 
         <div class="aboutSection">
-            <div class="aboutSection__cv hideImg">
-                <i class="fa-solid fa-x aboutSection__cv--icon"></i>
-                <img class="aboutSection__cv--img" src="./images/Andrzej_Gębala_CV_IT_new.webp"alt="moje CV">
-            </div>
             <div class="aboutSection__left">
                 <div class="aboutSection__left--location">
                     <h3><i class="fa-solid fa-location-dot"></i>Lublin, Polska</h3>
@@ -50,7 +49,8 @@
                 <div class="aboutSection__left--info">
                     <h3>Jestem początkującym front-end developerem bez doświadczenia komercyjnego,
                     za to z wielką determinacją i chęcią ciągłego rozwoju...<br/>
-                    zobacz moje <i class="fa-solid fa-arrow-right  fa-beat-fade"></i> <span class="cv">CV</span>
+                    zobacz moje <i class="fa-solid fa-arrow-right  fa-beat-fade"></i>
+                    <a class="cv" target="_blank" href="./images/Andrzej_Gębala_CV_IT_pdf.pdf">CV</a>
                     <i class="fa-solid fa-arrow-left fa-beat-fade"></i></h3>
                 </div>
                 <div class="aboutSection__left--links">
@@ -70,10 +70,32 @@
                 komunikatywnym, w tym słownictwo branżowe związane z programowaniem i obsługą komputera. Jestem świadomy i w pełni przekonany, 
                 że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.</p>
         </div>
+        <div class="skils" data-aos="slide-up">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-sass"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node"></i>
+        </div>
+        <div class="tasks">
+            <div class="tasks__title" data-aos="slide-up">
+                <h2>ĆWICZENIA</h2>
+            </div>
+            <div class="tasks__screen-shot" data-aos="slide-up">
+               <div class="tasks__screen-shot--span">
+                    <img class="tasks__screen-shot--span--img" src="./images/tic-tac-toe.webp" alt="gra kółko i krzyżyk">
+               </div>
+            </div>
+            <div class="tasks__info" data-aos="slide-up">
+                <p class="tasks__info--description">gra kółko i krzyżyk, wykorzystany reactjs, dane zapisywane w localstorage, style wykonane w SASS</p>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="./src/scripts/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
     <script>
       AOS.init();
     </script>

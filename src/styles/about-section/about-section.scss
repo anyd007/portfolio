@@ -99,16 +99,16 @@
         &--location{
 
             h3{
-                font-family: 'Roboto', sans-serif;
+                font-family: 'Syne', sans-serif;
                 letter-spacing: 0.2rem;
             }
         }
 
         &--title{
             h1{
-                font-family: 'Roboto', sans-serif;
-                font-size: 3rem;
-                line-height: 4rem;
+                font-family: 'Syne', sans-serif;
+                font-size: 3.5rem;
+                line-height: 3.5rem;
 
                 @include screen(small, medium){
                     font-size: 2rem;
@@ -119,7 +119,7 @@
 
         &--info{
             h3{
-                font-family: 'Roboto', sans-serif;
+                font-family: 'Syne', sans-serif;
                 font-size: 1.5rem;
                 line-height: 2rem;
                 @include screen(extra-small, small){
@@ -133,7 +133,7 @@
                 }
             }
             .cv{
-                color: red;
+                color: brown;
                 font-size: 2rem;
                 cursor: pointer;
             }
@@ -143,22 +143,21 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            gap: 10px;
             a{
-                font-family: 'League Gothic', sans-serif;
+                font-family: 'Syne', sans-serif;
                 text-decoration: none;
                 color: black;
-                font-size: 1.5rem;
-                letter-spacing: 0.2rem;
+                font-size: 1.2rem;
 
                 @include screen(extra-small, small){
-                    letter-spacing: 0.1rem;
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     flex-wrap: wrap;
                 }
 
                 @include screen(small,medium){
                     letter-spacing: 0rem;
-                    font-size: 1.2rem;
+                    font-size: 0.9rem;
                 }
             }
             .link-icon:hover{
@@ -181,8 +180,8 @@
 
         &--img{
             opacity: 0;
-            width: 400px;
-            height: 400px;
+            width: 450px;
+            height: 450px;
             border-radius: 50%;
             background-image: url("../../../images/68466531-mind-wallpapers-removebg-preview.png");
             background-position: center center;
