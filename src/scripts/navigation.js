@@ -4,6 +4,8 @@ const navSectionLinks = document.querySelectorAll(".navSection__left--nav a")
 const menuOpenIcon = document.querySelector(".menu-open-icon")
 const menuCloseIcon = document.querySelector(".menu-close-icon")
 const moreAboutMe = document.querySelector(".moreAboutMe")
+const contactPopup = document.querySelector(".hero__contact")
+const contact = document.querySelector("#contact")
 
 menuCloseIcon.classList.add("hide")
 navSectionLinks.forEach(el=>{
@@ -52,3 +54,7 @@ const removeNavEffect = () =>{
 navSection.addEventListener("click", openBurgerMenu)
 navSection.addEventListener("mouseover", navEffect)
 navSection.addEventListener("mouseout", removeNavEffect)
+contact.addEventListener("click", () =>{
+    contactPopup.classList.remove("hideContact")
+})
+

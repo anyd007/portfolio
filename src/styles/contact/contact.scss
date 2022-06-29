@@ -1,0 +1,86 @@
+@import "../responsivity/media-queries.scss";
+
+.hero__contact{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    z-index: 5;
+    animation-name: showPopup;
+    animation-duration: 0.7s;
+
+    &--popup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%);
+        width: 60vw;
+        height: auto;
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        @include screen(extra-small, small){
+            width: 100vw;
+        }
+        .close{
+            cursor: pointer;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        &--phone{
+            font-size: 2rem;
+            background-color: transparent;
+
+            a{
+                background-color: transparent;
+                font-family: 'Syne', sans-serif;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        &--mail{
+            font-size: 2rem;
+            background-color: transparent;
+
+            a{
+                background-color: transparent;
+                font-family: 'Syne', sans-serif;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+@keyframes showPopup {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.hideContact{
+    display: none;
+}
+.close{
+    background-color: transparent;
+    transition: transform 0.7s ease;
+}
+.close:hover{
+    transform: rotate(360deg) scale(1.5);
+    color: red;
+}

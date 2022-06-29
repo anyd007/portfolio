@@ -1,0 +1,94 @@
+.hero__contact {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  z-index: 5;
+  -webkit-animation-name: showPopup;
+          animation-name: showPopup;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+.hero__contact--popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  width: 60vw;
+  height: auto;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 230px) and (max-width: 480px) {
+  .hero__contact--popup {
+    width: 100vw;
+  }
+}
+.hero__contact--popup .close {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.hero__contact--popup--phone {
+  font-size: 2rem;
+  background-color: transparent;
+}
+.hero__contact--popup--phone a {
+  background-color: transparent;
+  font-family: "Syne", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.hero__contact--popup--mail {
+  font-size: 2rem;
+  background-color: transparent;
+}
+.hero__contact--popup--mail a {
+  background-color: transparent;
+  font-family: "Syne", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+@-webkit-keyframes showPopup {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes showPopup {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.hideContact {
+  display: none;
+}
+
+.close {
+  background-color: transparent;
+  transition: transform 0.7s ease;
+}
+
+.close:hover {
+  transform: rotate(360deg) scale(1.5);
+  color: red;
+}/*# sourceMappingURL=contact.css.map */

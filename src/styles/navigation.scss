@@ -60,6 +60,7 @@
             }
 
             a{
+                cursor: pointer;
                @extend %navLinksStyle;
 
                @include screen(extra-small, small){

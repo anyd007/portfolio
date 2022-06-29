@@ -4,6 +4,7 @@
 @import "./more-about-me/more-about-me.css";
 @import "./skils/skils.css";
 @import "./tasks/tasks.css";
+@import "./contact/contact.css";
 * {
   scroll-behavior: smooth;
   font-family: "League Gothic", sans-serif;
@@ -102,41 +103,21 @@
 @-webkit-keyframes showScroll {
   from {
     opacity: 0;
+    transform: rotate(0deg);
   }
   to {
     opacity: 1;
+    transform: rotate(180deg);
   }
 }
 
 @keyframes showScroll {
   from {
     opacity: 0;
+    transform: rotate(0deg);
   }
   to {
     opacity: 1;
-  }
-}
-.scrollArrow:hover {
-  -webkit-animation-name: rotate;
-          animation-name: rotate;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
     transform: rotate(180deg);
   }
 }

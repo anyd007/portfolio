@@ -4,6 +4,7 @@
 @import "./more-about-me/more-about-me.css";
 @import "./skils/skils.css";
 @import "./tasks/tasks.css";
+@import "./contact/contact.css";
 
 *{
     scroll-behavior: smooth;
@@ -69,20 +70,10 @@
 @keyframes showScroll {
     from{
         opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-.scrollArrow:hover{
-    animation-name: rotate;
-    animation-duration: 0.5s;
-}
-@keyframes rotate {
-    from{
         transform: rotate(0deg);
     }
     to{
+        opacity: 1;
         transform: rotate(180deg);
     }
 }

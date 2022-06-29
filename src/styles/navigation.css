@@ -59,6 +59,9 @@
     font-size: 2.5rem;
   }
 }
+.navSection__left--nav a {
+  cursor: pointer;
+}
 @media (min-width: 230px) and (max-width: 480px) {
   .navSection__left--nav a {
     font-size: 1.5rem;
