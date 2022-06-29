@@ -6,6 +6,7 @@
     grid-template-areas: 'title  title';
     justify-items: center;
     align-items: center;
+    gap: 1.3rem;
     
     @include screen(extra-small, small){
         grid-template-columns: 1fr;
@@ -41,11 +42,13 @@
         }
 
         &--span{
+            border-radius: 20px;
             width: 100%;
             height: 100%;
             background-color: rgb(211, 99, 99);
-
+            
             &--img{
+                border-radius: 20px;
                 cursor: pointer;
                 width: 100%;
                 height: 100%;
@@ -71,6 +74,7 @@
             }
         }
     }
+
     &__info{
 
         &--description{
@@ -80,7 +84,17 @@
             @include screen(extra-small, small){
                 font-size: 1.2rem;
                 text-align: center;
+                margin-bottom: 20px;
             }
         }
     }
+}
+#sec{
+    background-color: rgb(4, 45, 87);
+}
+#third{
+    background-color: rgb(75, 4, 75);
+}
+#forth{
+    background-color: orangered;
 }
