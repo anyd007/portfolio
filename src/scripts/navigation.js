@@ -15,6 +15,7 @@ navSectionLinks.forEach(el=>{
 const openBurgerMenu = e =>{
     if(e.target.matches(".menu-open-icon")){
         navSectionLinks.forEach(el=>{
+            el.style.filter = "blur(0px)"
             el.classList.remove("hideMenu")
         })
         menuOpenIcon.classList.add("hide")
