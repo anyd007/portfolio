@@ -81,3 +81,18 @@
 .hideScroll{
     display: none;
 }
+
+.photo{
+    animation-name: image;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    @keyframes image {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(-360deg);
+        }
+    }
+}
