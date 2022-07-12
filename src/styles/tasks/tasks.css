@@ -22,9 +22,13 @@
 }
 .tasks__title {
   grid-area: title;
+  text-align: center;
 }
 .tasks__title h2 {
   font-family: "Syne", sans-serif;
+}
+.tasks__title p {
+  font-size: 1.3rem;
 }
 .tasks__screen-shot {
   width: 90%;
@@ -88,6 +92,10 @@
     opacity: 1;
   }
 }
+.tasks__info {
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
 .tasks__info--description {
   font-family: "Syne", sans-serif;
   font-size: 1.5rem;
@@ -96,8 +104,48 @@
   .tasks__info--description {
     font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 20px;
   }
+}
+.tasks__info--button {
+  font-size: 1.2rem;
+  padding: 2px;
+  cursor: pointer;
+  -webkit-animation-name: btn-effect-off;
+          animation-name: btn-effect-off;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.tasks__info--button a {
+  text-decoration: none;
+  color: black;
+  -webkit-animation-name: btn-effect-off;
+          animation-name: btn-effect-off;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.tasks__info--button a:hover {
+  -webkit-animation-name: btn-effect;
+          animation-name: btn-effect;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.tasks__info--button:hover {
+  -webkit-animation-name: btn-effect;
+          animation-name: btn-effect;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#first {
+  background-color: blue;
 }
 
 #sec {
@@ -110,4 +158,46 @@
 
 #forth {
   background-color: orangered;
+}
+
+@-webkit-keyframes btn-effect {
+  from {
+    transform: rotate(0deg);
+    background-color: transparent;
+  }
+  to {
+    transform: rotate(20deg);
+    background-color: gold;
+  }
+}
+
+@keyframes btn-effect {
+  from {
+    transform: rotate(0deg);
+    background-color: transparent;
+  }
+  to {
+    transform: rotate(20deg);
+    background-color: gold;
+  }
+}
+@-webkit-keyframes btn-effect-off {
+  from {
+    transform: rotate(20deg);
+    background-color: gold;
+  }
+  to {
+    transform: rotate(0deg);
+    background-color: transparent;
+  }
+}
+@keyframes btn-effect-off {
+  from {
+    transform: rotate(20deg);
+    background-color: gold;
+  }
+  to {
+    transform: rotate(0deg);
+    background-color: transparent;
+  }
 }/*# sourceMappingURL=tasks.css.map */

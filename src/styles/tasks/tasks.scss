@@ -20,10 +20,15 @@
 
     &__title{
         grid-area: title;
+        text-align: center;
 
         h2{
             font-family: 'Syne', sans-serif;
         }
+        p{
+            font-size: 1.3rem;
+        }
+
     }
     &__screen-shot{
         width: 90%;
@@ -76,6 +81,8 @@
     }
 
     &__info{
+        text-align: center;
+        padding-bottom: 1.2rem;
 
         &--description{
             font-family: 'Syne', sans-serif;
@@ -84,11 +91,40 @@
             @include screen(extra-small, small){
                 font-size: 1.2rem;
                 text-align: center;
-                margin-bottom: 20px;
             }
+        }
+
+        &--button{
+            font-size: 1.2rem;
+            padding: 2px;
+            cursor: pointer;
+            animation-name: btn-effect-off;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+
+            a{
+                text-decoration: none;
+                color: black;
+                animation-name: btn-effect-off;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+            a:hover{
+                animation-name: btn-effect;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+        }
+        &--button:hover{
+            animation-name: btn-effect;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
         }
     }
 }
+#first {
+    background-color: blue;
+  }
 #sec{
     background-color: rgb(4, 45, 87);
 }
@@ -97,4 +133,25 @@
 }
 #forth{
     background-color: orangered;
+}
+@keyframes btn-effect {
+    from{
+        transform: rotate(0deg);
+        background-color: transparent;
+    }
+    to{
+        transform: rotate(20deg);
+        background-color: gold;
+    }
+
+}
+@keyframes btn-effect-off {
+    from{
+        transform: rotate(20deg);
+        background-color: gold;
+    }
+    to{
+        transform: rotate(0deg);
+        background-color: transparent;
+    }
 }

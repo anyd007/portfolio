@@ -11,6 +11,9 @@ const openTasks = e =>{
     }else if(e.target.matches("#bootstrap")){
         window.open("https://gallant-heisenberg-05c478.netlify.app")
     }
+    else if(e.target.matches("#workout")){
+        window.open("https://mern-workout.herokuapp.com/")
+    }
 }
 
 tasks.addEventListener("click", openTasks)
