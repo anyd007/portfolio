@@ -102,4 +102,14 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+}
+@media (min-width: 230px) and (max-width: 480px) {
+  .navSection__right--lang .icon {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 230px) and (max-width: 480px) {
+  .navSection__right--lang {
+    top: 5.5%;
+  }
 }/*# sourceMappingURL=navigation.css.map */
