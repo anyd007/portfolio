@@ -14,6 +14,9 @@ const openTasks = e =>{
     else if(e.target.matches("#workout")){
         window.open("https://mern-workout.herokuapp.com/")
     }
+    else if(e.target.matches("#sass-portfolio")){
+        window.open("https://anyd007.github.io/scss-exercises/dist/index.html")
+    }
 }
 
 tasks.addEventListener("click", openTasks)
