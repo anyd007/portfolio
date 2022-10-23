@@ -34,7 +34,7 @@
      <!-- FONT ASOME -->
     <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Jestem początkującym front-end developerem, 
+    <meta name="description" content="Jestem początkującym front-end developerem, programistą
                              z wielką determinacją i chęcią ciągłego rozwoju">
     <meta name="keywords" content="programowanie, front-end, developer, dev">
     <meta name="author" content="Andrzej Gębala" />
@@ -48,7 +48,7 @@
      <meta property=”og:description” content="Jestem początkującym front-end developerem, 
                                     z wielką determinacją i chęcią ciągłego rozwoju" />
 
-    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./dist/css/main.css">   
 
     <title>Portfolio Andrzej Gębala</title>
 
@@ -66,17 +66,24 @@
                 <i class="fa-brands fa-mailchimp hero__contact--popup--mail" ><a href="mailto:info@gebalaportfolio.pl">info@gebalaportfolio.pl</a></i>
             </div>
         </div>
-        <div class="navSection">
+        <header class="navSection">
             <div class="navSection__left">
-                <div class="navSection__left--nav">
-                            <div class="icons">
-                            <i class="fa-solid fa-chart-bar menu-open-icon"></i>
-                            <i class="fa-solid fa-x menu-close-icon"></i>
-                            </div>
-                            <a href="#about">O MNIE</a>
-                            <a href="#tasks">ĆWICZENIA</a>
-                            <a id="contact">KONTAKT</a>
+                <div class="menu-btn">
+                    <span class="menu-btn__burger"></span>
                 </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#about">O MNIE</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#tasks">ĆWICZENIA</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#contact">KONTAKT</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="navSection__right">
                 <div class="navSection__right--mail"><a href="mailto:info@gebalaportfolio.pl">info@gebalaportfolio.pl</a></div>
@@ -85,7 +92,7 @@
                    <p>english</p></a>
                 </div>
             </div>
-        </div>
+        </header>
 
         <div class="aboutSection">
             <div class="aboutSection__left">
@@ -215,7 +222,7 @@
     </div>
 </div>
 
-    <script type="module" src="./src/scripts/main.js"></script>
+    <script type="module" src="./dist/scripts/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js">
     </script>
     <script>
