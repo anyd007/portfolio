@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -49,15 +49,22 @@
         </div>
         <div class="navSection">
             <div class="navSection__left">
-                <div class="navSection__left--nav">
-                            <div class="icons">
-                            <i class="fa-solid fa-chart-bar menu-open-icon"></i>
-                            <i class="fa-solid fa-x menu-close-icon"></i>
-                            </div>
-                            <a href="#about">ABOUT</a>
-                            <a href="#tasks">EXERCISES</a>
-                            <a id="contact">CONTACT</a>
+                <div class="menu-btn">
+                    <span class="menu-btn__burger"></span>
                 </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#about">ABOUT ME</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#tasks">TASKS</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a id="contact" class="nav-menu__link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="navSection__right">
                 <div class="navSection__right--mail"><a href="mailto:info@gebalaportfolio.pl">info@gebalaportfolio.pl</a></div>
